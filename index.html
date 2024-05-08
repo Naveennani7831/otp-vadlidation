@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h2 id="h2">OTP Validation</h2>
+        <form  id="form"style="display: flex; flex-direction: column;gap:5px;width:250px;">
+            <label id="1" for="fname">Name:</label>
+            <input id="2"type="text" id="fname" placeholder="Enter Your Name" >
+            <label id="3" for="password">password:</label>
+            <input id="4"type="password" placeholder="password">
+            <label id="5"for="fname">Your One Time Password </label>
+            <button id="btn6">OTP</button>
+            <button id="btn7">submit</button>
+        </form>
+   </div>    
+        <script>
+            let  getmain=document.getElementById("main")
+            console.log(getmain.innerHTML)
+            getmain.style.border="1px solid"
+            getmain.style.width="300px"
+            getmain.style.height="250px"
+            getmain.style.marginLeft="600px"
+            getmain.style.marginTop="200px"
+
+         let geth2=document.getElementsByTagName("h2")[0]
+            geth2.style.textAlign="center"
+            geth2.style.backgroundColor="skyblue"
+            geth2.style.marginTop="-2.5px"
+
+         let get1=document.getElementById("1")
+            get1.style.marginLeft="70px"
+            get1.style.color="blue"
+
+         let get2=document.getElementById("2")
+            get2.style.marginLeft="70px"
+
+         let get3=document.getElementById("3")
+            get3.style.marginLeft="70px"
+            get3.style.color="blue"
+
+         let get4=document.getElementById("4")
+            get4.style.marginLeft="70px"
+            
+         let get5=document.getElementById("5")
+            get5.style.marginLeft="70px";
+            get5.style.color="blue"
+
+         let getbtn6=document.getElementById("btn6")
+            getbtn6.style.marginLeft="70px";
+           
+       
+         let getbtn7=document.getElementById("btn7");
+            getbtn7.style.backgroundColor="green";
+            getbtn7.style.marginLeft="70px";
+            getbtn7.style.fontSize="20px";
+        
+       
+    let getForm=document.getElementById("form")
+
+   div1=document.getElementById("main")
+  btn7= document.getElementById("btn7")
+  getForm.addEventListener("submit",(e)=>{
+   e.preventDefault();
+   btn6.innerHTML=Math.floor(Math.random()*9999);
+ if(btn6.innerHTML.length==4)
+ btn6.innerHTML=Math.floor(Math.random()*9999); 
+ }
+ );        
+
+
+         
+       </script>
+</body>
+</html>
